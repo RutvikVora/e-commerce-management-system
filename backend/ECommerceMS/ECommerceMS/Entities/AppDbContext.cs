@@ -32,10 +32,6 @@ public partial class AppDbContext : DbContext
             entity.Property(e => e.ProductId).HasColumnName("ProductID");
             entity.Property(e => e.TotalPrice).HasColumnType("decimal(9, 2)");
             entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
-
-            entity.HasOne(d => d.Product).WithMany(p => p.OrderDetails)
-                .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK_OrderDetails_ProductId");
         });
 
         modelBuilder.Entity<ProductDetail>(entity =>
