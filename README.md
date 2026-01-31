@@ -44,4 +44,9 @@ VITE_API_URL=https://localhost:7105/api
 npm run dev
 ```
 
+## Screenshots
+![Products](Screenshots/1.png)
+![Orders](Screenshots/2.png)
+![Add Products](Screenshots/3.png)
+![Add Orders](Screenshots/4.png)
 
