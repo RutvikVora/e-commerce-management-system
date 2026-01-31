@@ -18,6 +18,4 @@ public partial class OrderDetail
     public DateTime CreatedDate { get; set; }
 
     public DateTime UpdatedDate { get; set; }
-
-    public virtual ProductDetail? Product { get; set; }
 }
